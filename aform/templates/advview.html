@@ -1,0 +1,26 @@
+{% block body %}
+<style>
+img { height: 300px; width: 300px;}
+</style>
+
+
+
+{% for p in product %}
+ 
+ Name: {{ p.name }}<br>
+ <img src="{{ p.product_image.url }}"></img>
+ Category:  {{ p.category }}<br>
+<br> Start date:  {{ p.start_date }}
+<br> Start time: {{ p.start_time }}
+ <br>End date:{{ p.end_date }}
+<br> End time: {{ p.end_time }}
+<br> Price: {{ p.price }}
+<br> Description: {{ p.desc }}
+<br> Current Bidder: {{ p.current_bidder }}
+<br> Current Price:{{ p.currnet_price }}<br><br>
+{% endfor %}
+
+
+
+
+{% endblock %}
