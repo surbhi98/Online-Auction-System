@@ -1,3 +1,5 @@
 # Online-Auction-System
-A web application on auction system developed in Django.
+A web application on auction system.
+Back-end: Django (Python framework)
+Front-end: Bootstrap.
 
